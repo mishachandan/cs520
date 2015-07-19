@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>cs520stu041</display-name>
+  <welcome-file-list>
+    <welcome-file>views/index.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>UniversityName</param-name>
+    <param-value>Cal State LA</param-value>
+  </context-param>
+  <context-param>
+    <param-name>DepartmentName</param-name>
+    <param-value>Department of Computer Science</param-value>
+  </context-param>
+</web-app>
