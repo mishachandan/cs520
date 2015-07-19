@@ -1,2 +1,3 @@
 # cs520
-gefp winter 15
+ winter 15 
+ GEFP + midterm and final
