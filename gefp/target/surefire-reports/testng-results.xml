@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="3688" started-at="2015-03-13T04:48:22Z" finished-at="2015-03-13T04:48:26Z">
+    <groups>
+      <group name="DepartmentDaoTest">
+        <method signature="DepartmentDaoTest.addDepartment()[pri:0, instance:gefpmvc.model.dao.DepartmentDaoTest@69b0fd6f]" name="addDepartment" class="gefpmvc.model.dao.DepartmentDaoTest"/>
+      </group> <!-- DepartmentDaoTest -->
+      <group name="UserDaoTestT">
+        <method signature="UserDaoTest.getUser()[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="getUser" class="gefpmvc.modelTest.dao.UserDaoTest"/>
+        <method signature="UserDaoTest.getUsers()[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="getUsers" class="gefpmvc.modelTest.dao.UserDaoTest"/>
+      </group> <!-- UserDaoTestT -->
+      <group name="UserDaoTest">
+        <method signature="UserDaoTest.checkAllCheckpoint()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="checkAllCheckpoint" class="gefpmvc.model.dao.UserDaoTest"/>
+        <method signature="UserDaoTest.checkOneCheckpoint()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="checkOneCheckpoint" class="gefpmvc.model.dao.UserDaoTest"/>
+        <method signature="UserDaoTest.getUserByUsername()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="getUserByUsername" class="gefpmvc.model.dao.UserDaoTest"/>
+      </group> <!-- UserDaoTest -->
+      <group name="PlanDaoTest">
+        <method signature="PlanDaoTest.addPlan()[pri:0, instance:gefpmvc.model.dao.PlanDaoTest@11758f2a]" name="addPlan" class="gefpmvc.model.dao.PlanDaoTest"/>
+      </group> <!-- PlanDaoTest -->
+    </groups>
+    <test name="Command line test" duration-ms="3688" started-at="2015-03-13T04:48:22Z" finished-at="2015-03-13T04:48:26Z">
+      <class name="gefpmvc.model.dao.DepartmentDaoTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:gefpmvc.model.dao.DepartmentDaoTest@69b0fd6f]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="18" started-at="2015-03-12T21:48:22Z" finished-at="2015-03-12T21:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:gefpmvc.model.dao.DepartmentDaoTest@69b0fd6f]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="3067" started-at="2015-03-12T21:48:22Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.DepartmentDaoTest@69b0fd6f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="79" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.DepartmentDaoTest.addDepartment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="addDepartment()[pri:0, instance:gefpmvc.model.dao.DepartmentDaoTest@69b0fd6f]" name="addDepartment" duration-ms="68" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDepartment -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.DepartmentDaoTest@69b0fd6f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="12" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.DepartmentDaoTest.addDepartment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:gefpmvc.model.dao.DepartmentDaoTest@69b0fd6f]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- gefpmvc.model.dao.DepartmentDaoTest -->
+      <class name="gefpmvc.modelTest.dao.UserDaoTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="12" started-at="2015-03-12T21:48:26Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.modelTest.dao.UserDaoTest.getUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getUser()[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="getUser" duration-ms="9" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUser -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.modelTest.dao.UserDaoTest.getUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.modelTest.dao.UserDaoTest.getUsers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getUsers()[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="getUsers" duration-ms="14" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUsers -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.modelTest.dao.UserDaoTest.getUsers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:gefpmvc.modelTest.dao.UserDaoTest@6a1aab78]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- gefpmvc.modelTest.dao.UserDaoTest -->
+      <class name="gefpmvc.model.dao.PlanDaoTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:gefpmvc.model.dao.PlanDaoTest@11758f2a]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:gefpmvc.model.dao.PlanDaoTest@11758f2a]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="11" started-at="2015-03-12T21:48:26Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.PlanDaoTest@11758f2a]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.PlanDaoTest.addPlan()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="addPlan()[pri:0, instance:gefpmvc.model.dao.PlanDaoTest@11758f2a]" name="addPlan" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPlan -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.PlanDaoTest@11758f2a]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.PlanDaoTest.addPlan()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:gefpmvc.model.dao.PlanDaoTest@11758f2a]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- gefpmvc.model.dao.PlanDaoTest -->
+      <class name="gefpmvc.model.dao.UserDaoTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="13" started-at="2015-03-12T21:48:26Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.UserDaoTest.checkAllCheckpoint()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="checkAllCheckpoint()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="checkAllCheckpoint" duration-ms="296" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAllCheckpoint -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.UserDaoTest.checkAllCheckpoint()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.UserDaoTest.checkOneCheckpoint()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="checkOneCheckpoint()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="checkOneCheckpoint" duration-ms="11" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOneCheckpoint -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.UserDaoTest.checkOneCheckpoint()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.UserDaoTest.getUserByUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getUserByUsername()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="getUserByUsername" duration-ms="40" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserByUsername -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gefpmvc.model.dao.UserDaoTest.getUserByUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:gefpmvc.model.dao.UserDaoTest@77ec78b9]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-12T21:48:26Z" finished-at="2015-03-12T21:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- gefpmvc.model.dao.UserDaoTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

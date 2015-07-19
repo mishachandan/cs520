@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:security="http://www.springframework.org/schema/security"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+    <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost:5432/gefp" />
+    <!--     <property name="username" value="gefp" />
+        <property name="password" value="abcd" /> -->
+        <property name="username" value="misha" />
+        <property name="password" value="misha" />
+        <property name="initialSize" value="1" />
+         
+    </bean>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="gefpPersistenceUnit" />
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+    <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+    <context:annotation-config />
+
+    <tx:annotation-driven />
+
+    <context:component-scan base-package="gefpmvc.model" />
+    <context:component-scan base-package="gefpmvc.security" />
+    <context:component-scan base-package="gefpmvc.modelTest" />
+    <context:component-scan base-package="gefpmvc.web.service" />
+    
+	
+	<!-- Security config -->
+	  <security:http pattern="/login.html" security="none" />
+	  <security:http pattern="/logout.html" security="none" />
+	  <security:http pattern="/css/**" security="none" />
+      <security:http pattern="/img/**" security="none" />
+      <security:http pattern="/js/**" security="none" />
+      
+      
+	<security:authentication-manager>
+        <!-- <security:authentication-provider user-service-ref="userServiceBean"/> -->
+        <!-- <security:authentication-provider>
+            <security:jdbc-user-service data-source-ref="dataSource" 
+            users-by-username-query="select user_name , password , enabled from users where user_name=? "
+            authorities-by-username-query="select u.user_name, r.role_name from users u ,  role r ,  user_roles ur  
+            								where u.user_id = ur.userid and ur.roleid = r.role_id  and u.user_name =? "
+            />
+        </security:authentication-provider> -->
+        <security:authentication-provider user-service-ref="userService">
+            <security:password-encoder ref="passwordEncoder" />
+        </security:authentication-provider>
+    </security:authentication-manager>
+	<bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" />
+	
+	<!-- <security:user-service  id="userServiceBean" >
+		<security:user name="misha" password="misha" authorities="ROLE_USER, ROLE_ADMIN"/>
+		<security:user name="ginni" password="ginni" authorities="ROLE_USER"/>
+	</security:user-service> -->
+	
+    <security:http auto-config="true" use-expressions="true">
+    	<security:form-login login-page="/login.html"  
+    			
+    			 authentication-success-handler-ref="authenticationSuccessHandler" 
+    			/>  <!-- default-target-url="/reloadlogin.html" --> 
+    				<!--  username-parameter="username" password-parameter="password" -->
+    																		
+    	<security:logout  success-handler-ref="logoutRedirectHandler" delete-cookies="JSESSIONID"/>
+    	<security:session-management invalid-session-url="/login.html"  />
+   
+<!--     	<security:remember-me token-validity-seconds="1209600"  data-source-ref="dataSource" />
+ -->    	
+    	<!-- <security:intercept-url pattern="/*.html" access="hasRole('ROLE_ADMIN')" /> -->
+    <!-- 	<security:intercept-url pattern="/admin/**" access="hasRole('ADMIN')" />
+    	<security:intercept-url pattern="/advisor/**" access="hasRole('ADVISOR')" />
+    	<security:intercept-url pattern="/student/**" access="hasRole('STUDENT')" /> -->
+    <!-- 	
+    	<security:intercept-url pattern="/admin/**" access="authenticated and principal.admin " /> 
+    	<security:intercept-url pattern="/advisor/**" access="authenticated and principal.advisor" /> 
+    	<security:intercept-url pattern="/student/**" access="authenticated  and principal.student" /> 
+    	 -->
+    	<security:intercept-url pattern="/student/**" access="authenticated and principal.student or (principal.student and principal.advisor) " />
+        <security:intercept-url pattern="/advisor/**" access="authenticated and principal.advisor or (principal.student and principal.advisor)  or (principal.advisor and principal.admin)" />    
+        <security:intercept-url pattern="/admin/**" access="authenticated and principal.admin or (principal.admin and principal.advisor)" />
+        
+    </security:http>
+  	<!-- Security config ends -->
+</beans>
