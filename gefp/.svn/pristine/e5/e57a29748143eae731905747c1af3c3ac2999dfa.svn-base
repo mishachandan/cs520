@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ISO8601} %p %C: %m%n" />
+        </layout>
+    </appender>
+
+    <!-- <appender name="file" class="org.apache.log4j.FileAppender">
+        <param name="File" value="logtest.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ISO8601} %p %C: %m%n" />
+        </layout>
+    </appender> -->
+
+	<appender name="file" class="org.apache.log4j.rolling.RollingFileAppender">
+        <rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+            <param name="ActiveFileName" value="D:/Misha/gefp.log" />
+            <param name="FileNamePattern" value="D:/Misha/gefp.%d.log" />
+        </rollingPolicy>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ISO8601} %5p %c{1}: %m%n" />
+        </layout>
+    </appender>
+    
+    <logger name="gefpmvc.web">
+        <level value="DEBUG" />
+        <appender-ref ref="file"/>
+    </logger>
+
+    <root>
+        <level value="WARN" />
+        <!-- <appender-ref ref="stdout" /> -->
+ 		<appender-ref ref="file"/>
+    </root>
+
+</log4j:configuration>
